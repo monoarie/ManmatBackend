@@ -6,11 +6,11 @@ phases:
       nodejs: 12
   pre_build:
     commands:
-      - echo pre_build
+      - npm install
   build:
     commands:
       - echo Build started on `date`
-      - npm install
+      - npm run start
   post_build:
     commands:
       - echo Build completed on `date`
