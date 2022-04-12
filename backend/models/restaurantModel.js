@@ -6,7 +6,7 @@ const restaurantSchema = mongoose.Schema(
       type: String
     },
     image: {
-      type: Buffer
+      type: String
     },
     label: {
       type: String
@@ -29,6 +29,9 @@ const restaurantSchema = mongoose.Schema(
     },
     isRecommended: {
       type: Boolean
+    },
+    placeNum: {
+      type: Number
     }
   }
 )
